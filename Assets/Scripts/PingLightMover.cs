@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PingMovement : MonoBehaviour {
+public class PingLightMover : MonoBehaviour {
     public float timing = 2;
 
 	// Use this for initialization

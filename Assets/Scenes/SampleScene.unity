@@ -669,8 +669,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 811926721}
-  - component: {fileID: 811926724}
-  - component: {fileID: 811926728}
+  - component: {fileID: 811926727}
   - component: {fileID: 811926726}
   - component: {fileID: 811926725}
   - component: {fileID: 811926723}
@@ -731,19 +730,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &811926724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 811926720}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 866d3246f3e024b5691e2950fdea13d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  body: {fileID: 811926723}
-  moveSpeed: 5
 --- !u!23 &811926725
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -786,7 +772,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 811926720}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &811926728
+--- !u!114 &811926727
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -794,43 +780,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 811926720}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 007af01eae2fd4d6e820bc1c8cd29730, type: 3}
+  m_Script: {fileID: 11500000, guid: ea00271e9ee9745e58c04236793027d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pingLight: {fileID: 1473964991079080, guid: cdf01f689f825431eb3a0b483e59018b, type: 2}
+  moveSpeed: 5
+  body: {fileID: 811926723}
   canPing: 1
-  pingOn:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1020597955}
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Woo
-          m_BoolArgument: 1
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  pingOff:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1020597955}
-        m_MethodName: Stop
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
+  pingLight: {fileID: 1473964991079080, guid: cdf01f689f825431eb3a0b483e59018b, type: 2}
+  pingEffect: {fileID: 1020597955}
 --- !u!1 &844040733
 GameObject:
   m_ObjectHideFlags: 0
@@ -5752,8 +5709,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1056238511}
-  - component: {fileID: 1056238506}
-  - component: {fileID: 1056238513}
+  - component: {fileID: 1056238512}
   - component: {fileID: 1056238510}
   - component: {fileID: 1056238509}
   - component: {fileID: 1056238508}
@@ -5765,19 +5721,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1056238506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1056238505}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a004f453b35b49d29203b6f040aa0bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  body: {fileID: 1056238508}
-  moveSpeed: 5
 --- !u!58 &1056238507
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5869,7 +5812,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1056238513
+--- !u!114 &1056238512
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5877,43 +5820,59 @@ MonoBehaviour:
   m_GameObject: {fileID: 1056238505}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cafcbc300fb0c420daea3ec6b0cf0b94, type: 3}
+  m_Script: {fileID: 11500000, guid: ac7e2d4dd193e4830a6d9e9384e7555a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pingLight: {fileID: 1386127075420342, guid: 3f92208af65b843c993279846deb9c15, type: 2}
+  moveSpeed: 5
+  body: {fileID: 1056238508}
   canPing: 1
-  pingOn:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1584824521}
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  pingOff:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1584824521}
-        m_MethodName: Stop
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
+  pingLight: {fileID: 1386127075420342, guid: 3f92208af65b843c993279846deb9c15, type: 2}
+  pingEffect: {fileID: 1584824521}
+--- !u!1 &1258682600
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1258682602}
+  - component: {fileID: 1258682601}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1258682601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1258682600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea00271e9ee9745e58c04236793027d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  body: {fileID: 0}
+  canPing: 1
+  pingLight: {fileID: 0}
+  pingEffect: {fileID: 0}
+--- !u!4 &1258682602
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1258682600}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.4092414, y: -0.42955914, z: -9.440851}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1363359168
 GameObject:
   m_ObjectHideFlags: 0
