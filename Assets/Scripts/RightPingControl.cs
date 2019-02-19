@@ -19,16 +19,17 @@ public class RightPingControl : MonoBehaviour {
     {
         if (Input.GetButtonDown("RightPing") && canPing)
         {
-            canPing = false; 
-            pingOn.Invoke();
-            StartCoroutine(DisableLight());
-            GameObject pingLightClone = (GameObject)Instantiate(pingLight, transform.position, transform.rotation);
+            StartCoroutine(SendPing());
         }
     }
 
-    private IEnumerator DisableLight()
+    private IEnumerator SendPing()
     {
-        yield return new WaitForSeconds(4);
+        canPing = false;
+        pingOn.Invoke();
+        GameObject pingLightClone = (GameObject)Instantiate(pingLight, transform.position, transform.rotation);
+
+        yield return new WaitForSeconds(3);
         pingOff.Invoke();
         canPing = true;
     }

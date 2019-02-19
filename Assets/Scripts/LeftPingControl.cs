@@ -29,7 +29,7 @@ public class LeftPingControl : MonoBehaviour
 
     private IEnumerator DisableLight()
     {
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(3);
         pingOff.Invoke();
         canPing = true;
     }

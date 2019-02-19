@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PingMovement : MonoBehaviour {
-    public float timing = 3;
+    public float timing = 2;
 
 	// Use this for initialization
 	void Start () {
