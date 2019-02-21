@@ -6,6 +6,7 @@ using TMPro;
 public class BlueGoal : MonoBehaviour
 {
     public TextMeshProUGUI text;
+    public GameObject bluePlayer;
 
 	// Use this for initialization
 	void Start()
@@ -15,7 +16,7 @@ public class BlueGoal : MonoBehaviour
 	
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "Blue")
+        if (collision.gameObject == bluePlayer)
         {
             text.text = "Blue is in!";
         }

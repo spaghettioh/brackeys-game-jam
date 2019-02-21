@@ -50,3 +50,6 @@ TagManager:
   - name: PlayerStuffAndWalls
     uniqueID: 3258511117
     locked: 0
+  - name: UI
+    uniqueID: 645225151
+    locked: 0
