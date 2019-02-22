@@ -8,11 +8,12 @@ public class Key : MonoBehaviour
 
 	// Use this for initialization
 	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
+        gameObject.GetComponent<SpriteRenderer>().maskInteraction = SpriteMaskInteraction.VisibleInsideMask;
+        unlocks.GetComponent<SpriteRenderer>().maskInteraction = SpriteMaskInteraction.VisibleInsideMask;
+    }
+
+    // Update is called once per frame
+    void Update () {
 		
 	}
 

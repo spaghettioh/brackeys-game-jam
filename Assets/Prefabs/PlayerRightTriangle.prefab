@@ -19,10 +19,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4991767450406616}
+  - component: {fileID: 114982717218905354}
   - component: {fileID: 212016572900853836}
   - component: {fileID: 60287927620970610}
   m_Layer: 0
-  m_Name: OrangeGate
+  m_Name: PlayerRightTriangle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50,7 +51,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -76,6 +77,18 @@ PolygonCollider2D:
       - {x: 0.45, y: -0.42}
       - {x: 0.47, y: -0.39999998}
       - {x: 0.47, y: -0.35999998}
+--- !u!114 &114982717218905354
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1398871924630630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edd910e689ee54b69b44beba7dcd056b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unlocks: {fileID: 0}
 --- !u!212 &212016572900853836
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -108,8 +121,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -45030265
-  m_SortingLayer: 2
+  m_SortingLayerID: -1798334799
+  m_SortingLayer: 1
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: cff1f10f45ff041ed825f77feea4702c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

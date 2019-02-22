@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class OrangeGoal : MonoBehaviour
+public class PlayerRightGoal : MonoBehaviour
 {
     public TextMeshProUGUI text;
     public GameObject orangePlayer;
