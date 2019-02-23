@@ -5,11 +5,13 @@ using UnityEngine;
 public class Key : MonoBehaviour
 {
     public GameObject unlocks;
+    AudioSource sfx;
 
 	// Use this for initialization
 	void Start () {
         gameObject.GetComponent<SpriteRenderer>().maskInteraction = SpriteMaskInteraction.VisibleInsideMask;
         unlocks.GetComponent<SpriteRenderer>().maskInteraction = SpriteMaskInteraction.VisibleInsideMask;
+        sfx = gameObject.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -19,6 +21,8 @@ public class Key : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        sfx.Play();
+
         // disable the gate and add a flourish
         unlocks.GetComponent<Collider2D>().enabled = false;
         unlocks.GetComponent<SpriteRenderer>().enabled = false;

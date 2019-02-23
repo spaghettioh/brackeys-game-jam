@@ -9,11 +9,12 @@ public class Player : MonoBehaviour
     public bool canPing = true;
     public GameObject pingLight;
     public ParticleSystem pingEffect;
+    AudioSource pingSound;
 
     // Use this for initialization
     void Start ()
     {
-		
+        pingSound = gameObject.GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -26,6 +27,7 @@ public class Player : MonoBehaviour
     {
         canPing = false;
         pingEffect.Play();
+        pingSound.Play();
         GameObject pingLightClone = (GameObject)Instantiate(pingLight, t.position, t.rotation);
 
         yield return new WaitForSeconds(3);
