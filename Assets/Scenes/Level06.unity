@@ -701,6 +701,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94e7a3acf4427494a8f3b7f988afa59c, type: 2}
   m_IsPrefabAsset: 0
+--- !u!20 &801032554 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 20018745794660016, guid: 94e7a3acf4427494a8f3b7f988afa59c,
+    type: 2}
+  m_PrefabInternal: {fileID: 801032553}
 --- !u!1 &811926720 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1677550961272694, guid: e5d0dba2b58b7424ea1d61401378c3ca,
@@ -818,6 +823,11 @@ Prefab:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 223468445622272464, guid: 7c28c9e661fd64235b52156cca8646a5,
+        type: 2}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 801032554}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c28c9e661fd64235b52156cca8646a5, type: 2}
   m_IsPrefabAsset: 0

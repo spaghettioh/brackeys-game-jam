@@ -16,7 +16,6 @@ public class StartGame : MonoBehaviour {
 
     }
 
-    // Use this for initialization
     public void StartTheGame()
     {
         scrim.CrossFadeAlpha(.7f, 1, false);
@@ -26,7 +25,7 @@ public class StartGame : MonoBehaviour {
     IEnumerator LoadNextLevel()
     {
         yield return new WaitForSeconds(2);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("Level01");
     }
 
 }
