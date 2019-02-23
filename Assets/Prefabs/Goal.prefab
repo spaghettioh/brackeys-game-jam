@@ -178,7 +178,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.708554
+  m_Radius: 0.6
 --- !u!114 &114506616749360418
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -190,14 +190,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceea9802edca843bf9ee9ca2f533ec76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  label: {fileID: 1728078335932706}
-  leftText: {fileID: 114264865247969978, guid: 7c28c9e661fd64235b52156cca8646a5, type: 2}
-  leftMessage: Blue!
-  rightText: {fileID: 114071130270684382, guid: 7c28c9e661fd64235b52156cca8646a5,
+  playerLeft: {fileID: 50580166588374018, guid: e5d0dba2b58b7424ea1d61401378c3ca,
     type: 2}
+  playerRight: {fileID: 50263011978684448, guid: a659806451fa04181ab0e1d37dfa71b6,
+    type: 2}
+  strengthOfAttraction: -10
+  radius: 1
+  label: {fileID: 1728078335932706}
+  leftText: {fileID: 0}
+  leftMessage: Blue!
+  rightText: {fileID: 0}
   rightMessage: Pink!
-  winText: {fileID: 114101988556121780, guid: 7c28c9e661fd64235b52156cca8646a5, type: 2}
+  winText: {fileID: 0}
   winMessage: Nice!
+  scrim: {fileID: 0}
 --- !u!198 &198145212161083890
 ParticleSystem:
   m_ObjectHideFlags: 1
