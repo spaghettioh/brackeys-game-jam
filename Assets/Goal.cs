@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
@@ -12,10 +11,6 @@ public class Goal : MonoBehaviour {
     public float radius;
 
     public GameObject label;
-    public TextMeshProUGUI leftText;
-    public string leftMessage;
-    public TextMeshProUGUI rightText;
-    public string rightMessage;
     public TextMeshProUGUI winText;
     public string winMessage;
     public RawImage scrim;
@@ -24,25 +19,12 @@ public class Goal : MonoBehaviour {
     bool left = false;
     bool right = false;
 
-
-
-    //private Rigidbody2D rigid;
-    //[SerializeField]
-    //Transform planet;
-
-    //[SerializeField]
-    //float acceleration = 0.81f;
-
-
     // Use this for initialization
     void Start () {
         Destroy(label);
-        //leftText.text = "";
-        //rightText.text = "";
         winText.text = "";
-        //rigid = GetComponent<Rigidbody2D>();
 
-        // this is a fix for crossfade
+        // fix for crossfade
         Color fixedColor = scrim.color;
         fixedColor.a = 1;
         scrim.color = fixedColor;
@@ -55,18 +37,9 @@ public class Goal : MonoBehaviour {
         GravityWell(playerLeft.GetComponent<Rigidbody2D>());
         GravityWell(playerRight.GetComponent<Rigidbody2D>());
 
-        //if (left)
-        //    leftText.text = leftMessage;
-
-        //if (right)
-        //rightText.text = rightMessage;
-
-
         if (left && right)
         {
             scrim.CrossFadeAlpha(.7f, 1, false);
-            //Destroy(playerLeft);
-            //Destroy(playerRight);
             playerLeft.transform.localPosition = transform.localPosition;
             playerRight.transform.localPosition = transform.localPosition;
             winText.text = winMessage;
@@ -81,7 +54,7 @@ public class Goal : MonoBehaviour {
         //we're doing 2d physics, so don't want to try and apply z forces!
         offset.z = 0;
 
-        if (offset.x < radius && offset.y < radius)
+        if (Mathf.Abs(offset.x) < radius && Mathf.Abs(offset.y) < radius)
         {
             p.AddForce(strengthOfAttraction * offset.normalized, ForceMode2D.Force);
         }
@@ -115,7 +88,7 @@ public class Goal : MonoBehaviour {
 
     IEnumerator LoadNextLevel()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(3);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

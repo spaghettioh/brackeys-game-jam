@@ -19,7 +19,6 @@ public class Key : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("bar");
         Destroy(unlocks);
         Destroy(gameObject);
     }

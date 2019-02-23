@@ -178,7 +178,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.6
+  m_Radius: 0.5
 --- !u!114 &114506616749360418
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -197,10 +197,6 @@ MonoBehaviour:
   strengthOfAttraction: -10
   radius: 1
   label: {fileID: 1728078335932706}
-  leftText: {fileID: 0}
-  leftMessage: Blue!
-  rightText: {fileID: 0}
-  rightMessage: Pink!
   winText: {fileID: 0}
   winMessage: Nice!
   scrim: {fileID: 0}
