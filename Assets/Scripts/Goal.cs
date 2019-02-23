@@ -4,7 +4,8 @@ using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class Goal : MonoBehaviour {
+public class Goal : MonoBehaviour
+{
     public GameObject playerLeft;
     public GameObject playerRight;
     public float strengthOfAttraction;
@@ -15,13 +16,13 @@ public class Goal : MonoBehaviour {
     public string winMessage;
     public RawImage scrim;
 
-
     bool left = false;
     bool right = false;
     bool done = false;
 
     // Use this for initialization
-    void Start () {
+    void Start ()
+    {
         Destroy(label);
         winText.text = "";
 

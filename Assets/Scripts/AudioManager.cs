@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
@@ -8,6 +6,7 @@ public class AudioManager : MonoBehaviour
 
     private void Awake()
     {
+        // let the music persist between levels
         if (instance == null)
         {
             instance = this;
@@ -22,12 +21,8 @@ public class AudioManager : MonoBehaviour
     }
 
     // Use this for initialization
-    void Start () {
+    void Start ()
+    {
         gameObject.GetComponent<AudioSource>().Play();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
 	}
 }

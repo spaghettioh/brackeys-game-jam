@@ -1,10 +1,10 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class StartGame : MonoBehaviour {
+public class StartGame : MonoBehaviour
+{
     public RawImage scrim;
 
     public void Start()
@@ -27,5 +27,4 @@ public class StartGame : MonoBehaviour {
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene("Level01");
     }
-
 }
