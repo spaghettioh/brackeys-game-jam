@@ -13,13 +13,21 @@ public class StartGame : MonoBehaviour
         fixedColor.a = 1;
         scrim.color = fixedColor;
         scrim.CrossFadeAlpha(0f, 0f, true);
-
     }
 
     public void StartTheGame()
     {
         scrim.CrossFadeAlpha(.7f, 1, false);
         StartCoroutine(LoadNextLevel());
+    }
+
+    public void QuitGame()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit ();
+#endif
     }
 
     IEnumerator LoadNextLevel()
