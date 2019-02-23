@@ -41,7 +41,7 @@ public class Goal : MonoBehaviour
 
         if (left && right)
         {
-            scrim.CrossFadeAlpha(.7f, 1, false);
+            scrim.CrossFadeAlpha(.8f, 1, false);
             playerLeft.transform.localPosition = transform.localPosition;
             playerRight.transform.localPosition = transform.localPosition;
             winText.text = winMessage;

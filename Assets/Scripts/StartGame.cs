@@ -17,7 +17,7 @@ public class StartGame : MonoBehaviour
 
     public void StartTheGame()
     {
-        scrim.CrossFadeAlpha(.7f, 1, false);
+        scrim.CrossFadeAlpha(.8f, 1, false);
         StartCoroutine(LoadNextLevel());
     }
 
