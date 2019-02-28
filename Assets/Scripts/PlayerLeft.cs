@@ -7,9 +7,9 @@ public class PlayerLeft : Player
     {
         base.Update(); 
         body.velocity = new Vector2(Input.GetAxis("Horizontal") * moveSpeed, Input.GetAxis("Vertical") * moveSpeed);
-        if (Input.GetButtonDown("LPing") && canPing)
+        if (Input.GetButtonDown("LPing") && canEcho)
         {
-            StartCoroutine(SendPing(transform));
+            StartCoroutine(SendEcho(transform));
         }
     }
 }

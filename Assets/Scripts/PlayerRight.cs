@@ -7,9 +7,9 @@ public class PlayerRight : Player
     {
         base.Update();
         body.velocity = new Vector2(Input.GetAxis("RHorizontal") * moveSpeed, Input.GetAxis("RVertical") * moveSpeed);
-        if (Input.GetButtonDown("RPing") && canPing)
+        if (Input.GetButtonDown("RPing") && canEcho)
         {
-            StartCoroutine(SendPing(transform));
+            StartCoroutine(SendEcho(transform));
         }
     }
 }

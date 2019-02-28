@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114355848482447502}
   - component: {fileID: 331851108228758640}
   m_Layer: 0
-  m_Name: PlayerRightPing
+  m_Name: PlayerLeftEcho
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
