@@ -795,7 +795,7 @@ Prefab:
     - target: {fileID: 58798824991508594, guid: b6c3ea2efd0b645a4b31c2a538d2b575,
         type: 2}
       propertyPath: m_Radius
-      value: 0.6
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 4303055785454258, guid: b6c3ea2efd0b645a4b31c2a538d2b575, type: 2}
       propertyPath: m_LocalScale.x
