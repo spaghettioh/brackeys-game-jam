@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4515300248167086}
   - component: {fileID: 212308320690869958}
   - component: {fileID: 331203323712054566}
+  - component: {fileID: 114349417698678862}
   m_Layer: 0
   m_Name: PlayerRightPathForBrush
   m_TagString: Untagged
@@ -41,6 +42,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114349417698678862
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1391582119650370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 084ab774183e5404c9a44d909eb3e14b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 212308320690869958}
 --- !u!212 &212308320690869958
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -76,8 +89,8 @@ SpriteRenderer:
   m_SortingLayerID: -1798334799
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6aa230c8f15564115af63d4e393b0ec3, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 9d6eec6611ff1487194144e0f1950efa, type: 3}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
