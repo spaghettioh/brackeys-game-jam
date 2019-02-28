@@ -9,9 +9,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d5751a2c961df945a34295ccf5e576d, type: 3}
-  m_Name: BlueTriangleBrush
+  m_Name: PlayerRightGateBrush
   m_EditorClassIdentifier: 
   m_Prefabs:
-  - {fileID: 1727501465284928, guid: b01441da24fbc47889ccdf231b096bbc, type: 2}
+  - {fileID: 1398871924630630, guid: dea815439e33e4eb8a6ef2cd8f6aef4b, type: 2}
   m_PerlinScale: 0.5
   m_Z: 0

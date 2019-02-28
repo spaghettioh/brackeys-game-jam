@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 331203323712054566}
   - component: {fileID: 114001251989647080}
   m_Layer: 0
-  m_Name: PlayerLeftPathForBrush
+  m_Name: PlayerLeftPath
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

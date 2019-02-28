@@ -13,8 +13,8 @@ TagManager:
   - UI
   - 
   - 
-  - BluePath
-  - OrangePath
+  - PlayerLeftPath
+  - PlayerRightPath
   - Players
   - Goals
   - Keys
@@ -41,10 +41,10 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: OrangePath
+  - name: PlayerRightPath
     uniqueID: 2496632497
     locked: 0
-  - name: BluePath
+  - name: PlayerLeftPath
     uniqueID: 4249937031
     locked: 0
   - name: PlayerStuffAndWalls

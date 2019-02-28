@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class PingScaler : MonoBehaviour
+public class EchoScaler : MonoBehaviour
 {
     public float timing = 2;
 

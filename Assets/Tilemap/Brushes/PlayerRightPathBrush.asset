@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d5751a2c961df945a34295ccf5e576d, type: 3}
-  m_Name: OrangePathBrush
+  m_Name: PlayerRightPathBrush
   m_EditorClassIdentifier: 
   m_Prefabs:
   - {fileID: 1391582119650370, guid: be3378104f2ba4621b97be3e9c08c0f0, type: 2}
