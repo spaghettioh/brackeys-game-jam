@@ -2,25 +2,31 @@
 
 # ECHO CHAMBER v1.0 postmortem
 
-*Mar 17, 2019
-spaghettioh
-**Status: In progress***
+*Mar 17, 2019*
+
+***Status: In progress***
 
 ## Summary
 
-Development of ECHO CHAMBER for the second game jam held by the YouTube channel Brackeys completed on MM DD YYYY using the Unity IDE. The theme of the jam was "love is blind" and the submission deadline was one week.
-
 ECHO CHAMBER is a single player game with "split-brain" controls to be played at your own pace. The player simultaneously controls two discs with separate controls with the aim of joining the two discs at a single goal in order to move on to the next level. Each disc can send "echoes" that reveal the route for the other disc, which can also uncover blocked paths and keys which unlock gates blocking the other's path.
 
-This postmortem is meant to analyze the successes and shortcomings of that version 1.0 release.
+Development of ECHO CHAMBER completed February 23, 2019 using the Unity IDE, and it was submitted for the second game jam held by the YouTube channel, Brackeys, held from February 16th, 2019 at 3:00 AM to March 17th, 2019 at 3:00 AM. The theme of the jam was "love is blind," and the submission deadline was one week.
+
+This postmortem is meant to analyze the successes & failures encountered during devlopment, and feedback collected during the rating period of that version 1.0 release.
 
 ## Reception
 
-ECHO CHAMBER ranked 41st overall of 330 submissions to the jam, with above-average scores in all categories. Feedback was generally positive, praising the music, conceptual idea, and overall feeling of the game. Negative feedback was reported over the lack of intuitive controls and general guidance of game play (e.g. not knowing how to echo, or generally what to do in the game).
+ECHO CHAMBER ranked 41st overall of 330 submissions to the jam, with above-average scores in all categories.
+
+Feedback was generally positive, with praise to the music, conceptual idea, and overall feeling of the game.
+
+Negative feedback was reported over the lack of intuitive controls and general guidance of game play (e.g. not knowing how to echo, or generally what to do in the game).
+
+The resulting scores of the game were as follows:
 
 | Criteria	 | Rank	| Score*| Raw Score|
 | ----------- | ---- | ----- | --- |
-| Overall | 41 | 3.515 | 3.515 |
+| **Overall** | **41** | **3.515** | **3.515** |
 | Audio | 22 | 3.773 | 3.773 |
 | Innovation | 40 | 3.545 | 3.545 |
 | Game design | 57 | 3.500 | 3.500 |
@@ -34,7 +40,7 @@ ECHO CHAMBER ranked 41st overall of 330 submissions to the jam, with above-avera
 
 ## Goals
 
-The ultimate focus during development was the delivery of a completed game concept using an overly simple visual style and controls. Polish was a primary goal to be met before the release of the game, which meant a clear visual theme, the inclusion of audio in the form of music and sound effects, and a generally clean look and feel.
+The ultimate focus during development was the delivery of a completed, playable game using an overly simple visual style, gameplay mechanics, and controls. Polish was a primary goal to be met before the release of the game, which meant a clear visual theme, the inclusion of audio in the form of music and sound effects, and a generally clean look and feel.
 
 ## Motivations
 
