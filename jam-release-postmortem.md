@@ -328,29 +328,31 @@ In summary, time management.
 
 ### Fixation on non-breaking features
 
-There were a couple of blocks of time each night during the jam window where I became fixated on a particular portion of development. Even if it was something that was absolutely necessary for the game to work as planned, it was never something that broken the game entirely. Some examples were:
+There were a couple of blocks of time each night where I became fixated on a particular portion of development. Even if it was something that was absolutely necessary for the game to work as planned, it was never something that broken the game entirely. Some examples were:
 
 
 
 *   Gravity well applied to the end goal. After finding a script that would work, I spent a lot of time trying to optimize it to work just the way I wanted it to, or I introduced minor bugs by implementing it in the first place and insisted on fixing and polishing it before moving on.
-*    TODO
+*   Echo effect and sprite masking. When switching from 3D objects to sprites, the visual aesthetic was changed drastically. I ended up using sprite masks instead, and once that shift in development was completed, I spent way too long tweaking the actual echo effect sprite in Photoshop or Sketch in order to get it looking just right instead of moving on to the next task.
 
-Additionally, I spent a lot of time making very small tweaks to make something look just a certain way, or behave in a particular fashion. One example is the end portal. I must've viewed five full videos just to create the swirling effect.
+Additionally, I spent a lot of time making very small tweaks to make something look just a certain way or behave in a particular fashion too soon after development. One example is the end portal. I must've viewed five full videos just to create the swirling effect. The problem was not that I felt this polish was necessary, but that polishing a thing after fixing some problem with it was unnecessary in order to move on in development.
 
 
 ### Experimentation with new tools
 
- TODO
+I knew that I would want music and sound effects in the game, and that meant creating them on my own due to the rules of the jam. Luckily, GarageBand came preinstalled on my laptop, but that also meant learning the software in the final hours. It took time to scour for tutorials to figure out how to use the app, and time to download prebuilt loops to construct the music.
+
+Additionally, switching from 3D objects to sprites meant that I had to learn how to recreate the echo effect established in the prototype. I effectively switched from an actual lighting effect to using sprite-masking. The end result was mostly similar, however additional time was spent learning how masking actually worked.
 
 
 ### Weak workflow for switching between OSs
 
- TODO 
+While the prototype and majority of the game was built entirely in Mac OS, I ended up switching between that and Windows a couple of times at the end in order to build a WebGL version because the Mac could not produce a file for some reason. This of course lead to plenty of head-scratching and confusion. There are also small things that come along with builds and their resolutions on different screens. The UI would render differently when maximized in WebGL and in Windows versions. This resulted in forcing a fixed resolution to ensure the same experience would be had by all players.
 
 
 ### The game was submitted late
 
-I was unsure of how to actually upload/submit the game, and ultimately missed the deadline. A few minutes later I found that there was a submit button in the rules of the jam.
+I was unsure of how to actually upload/submit the game, and ultimately missed the deadline. A few minutes later I found that there was a submit button in the rules of the jam that disappears when the window closes.
 
 
 ## Where I got lucky
@@ -388,8 +390,8 @@ Ultimately I could have shifted my focus to do two things differently:
 
 
 *   Moved on from feature development sooner rather than spending an hour or more trying to write code for relatively small designs. This would've included:
-    *   Gravity well adjustments. The initial version of the script worked fine, but pulled the disc in from any distance, and changes I made to the script severely impacted and/or exaggerated the effect)
-    *   Echo effect. This effect was initially built using a combination of lighting effects, which worked fine with the 3D primitives used during the protoype. When sprites were brought in to replace the placeholder 3D objects, the lighting effects stopped working as intended, and I fell down a rabbit hole that ultimately lead to the sprite-masking effect now in use.
+    *   Gravity well adjustments. The initial version of the script worked fine, but pulled the disc in from any distance, and changes I made to the script severely impacted and/or exaggerated the effect.
+    *   Echo effect. This effect was initially built using a combination of lighting effects, which worked fine with the 3D primitives used during the prototype. When sprites were brought in to replace the placeholder 3D objects, the lighting effects stopped working as intended, and I fell down a rabbit hole that ultimately lead to the sprite-masking effect now in use.
 *   Spent less or no time on polish after fixing bugs during feature development. I would sometimes fix bugs with new features right away, then spend the tail end spit-shining the final, working result. This would've included:
     *   Tweaking and polishing the gravity well parameters
     *   Optimizing sprite sizes and import settings to match pixel ratios
@@ -441,7 +443,7 @@ _Times in EST_
   <tr>
    <td>Feb 23, 3:50 am
    </td>
-   <td>Game submitted
+   <td>Game submitted to jam
    </td>
   </tr>
   <tr>
@@ -460,10 +462,12 @@ _Times in EST_
 
 
 
-# Supporting Information
+# Supporting information
 
 
 
 *   [ECHO CHAMBER itch.io submission page](https://emofield.itch.io/echo-chamber)
 *   [GitHub repository](https://github.com/spaghettioh/brackeys-game-jam)
 *   [Game jam home page and rules](https://itch.io/jam/brackeys-2)
+
+<!-- Docs to Markdown version 1.0β16 -->
